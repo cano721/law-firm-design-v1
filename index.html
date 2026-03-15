@@ -1,0 +1,1253 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>법무법인 진명 | 성범죄·마약 전문 로펌</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy: #1a1f36;
+  --navy-light: #252b4a;
+  --navy-dark: #0f1220;
+  --gold: #c4a35a;
+  --gold-light: #d4b87a;
+  --gold-dark: #a8893e;
+  --white: #ffffff;
+  --gray-50: #f8f9fa;
+  --gray-100: #f1f3f5;
+  --gray-200: #e9ecef;
+  --gray-400: #adb5bd;
+  --gray-600: #6c757d;
+  --gray-800: #343a40;
+  --text-primary: #1a1f36;
+  --text-secondary: #4a5066;
+  --shadow-sm: 0 2px 8px rgba(0,0,0,0.08);
+  --shadow-md: 0 4px 20px rgba(0,0,0,0.12);
+  --shadow-lg: 0 8px 40px rgba(0,0,0,0.16);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Noto Sans KR',sans-serif;color:var(--text-primary);background:#fff;line-height:1.6}
+
+/* ===== PAGE TABS ===== */
+.page-content{display:none}
+.page-content.active{display:block}
+
+/* ===== HEADER ===== */
+.site-header{background:var(--navy);position:sticky;top:0;z-index:1000;border-bottom:1px solid rgba(196,163,90,.2)}
+.header-inner{max-width:1280px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:72px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+.logo-icon{width:44px;height:44px;background:linear-gradient(135deg,var(--gold),var(--gold-dark));border-radius:6px;display:flex;align-items:center;justify-content:center;font-family:'Noto Serif KR',serif;font-weight:700;color:var(--navy);font-size:18px}
+.logo-text{display:flex;flex-direction:column}
+.logo-name{font-family:'Noto Serif KR',serif;color:var(--white);font-size:18px;font-weight:700;letter-spacing:.1em}
+.logo-sub{color:var(--gold);font-size:10px;letter-spacing:.2em;text-transform:uppercase}
+.main-nav{display:flex;gap:4px}
+.nav-item{color:rgba(255,255,255,.8);text-decoration:none;padding:8px 16px;font-size:14px;font-weight:500;border-radius:4px;transition:all .2s;letter-spacing:.03em}
+.nav-item:hover,.nav-item.active{color:var(--gold);background:rgba(196,163,90,.1)}
+.header-cta{display:flex;align-items:center;gap:16px}
+.emergency-tel{color:var(--gold);font-size:14px;font-weight:700;display:flex;align-items:center;gap:8px;text-decoration:none;letter-spacing:.05em}
+.emergency-tel i{font-size:16px;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.6}}
+.btn-consult-header{background:var(--gold);color:var(--navy);padding:10px 20px;border-radius:4px;font-size:13px;font-weight:700;text-decoration:none;letter-spacing:.05em;transition:background .2s}
+.btn-consult-header:hover{background:var(--gold-light)}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px}
+.hamburger span{width:24px;height:2px;background:var(--white);border-radius:1px;transition:all .3s}
+
+/* ===== FLOATING QUICK MENU ===== */
+.floating-menu{position:fixed;right:24px;top:50%;transform:translateY(-50%);z-index:1500;display:flex;flex-direction:column;gap:8px}
+.float-btn{width:56px;height:56px;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;cursor:pointer;box-shadow:var(--shadow-md);transition:all .25s;text-decoration:none;position:relative;font-size:10px;font-weight:700;gap:3px}
+.float-btn i{font-size:18px}
+.float-btn-tel{background:var(--navy);border:2px solid var(--gold);color:var(--gold)}
+.float-btn-kakao{background:#fee500;color:#3c1e1e}
+.float-btn-consult{background:var(--gold);color:var(--navy)}
+.float-btn:hover{transform:scale(1.1)}
+.float-label{position:absolute;right:68px;background:var(--navy);color:var(--white);padding:5px 10px;border-radius:4px;font-size:11px;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .2s;border:1px solid rgba(196,163,90,.3)}
+.float-btn:hover .float-label{opacity:1}
+
+/* ===== HERO ===== */
+.hero{background:linear-gradient(135deg,var(--navy-dark) 0%,var(--navy) 50%,#1e2640 100%);min-height:85vh;display:flex;align-items:center;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23c4a35a' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")}
+.hero::after{content:'';position:absolute;right:0;top:0;bottom:0;width:45%;background:linear-gradient(to left,rgba(196,163,90,.08),transparent)}
+.hero-inner{max-width:1280px;margin:0 auto;padding:80px 24px;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;position:relative;z-index:1}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(196,163,90,.15);border:1px solid rgba(196,163,90,.4);color:var(--gold);padding:8px 16px;border-radius:100px;font-size:12px;font-weight:700;letter-spacing:.15em;margin-bottom:24px}
+.hero-title{font-family:'Noto Serif KR',serif;color:var(--white);font-size:clamp(28px,4vw,52px);font-weight:700;line-height:1.3;margin-bottom:20px}
+.hero-title em{color:var(--gold);font-style:normal;display:block}
+.hero-desc{color:rgba(255,255,255,.72);font-size:16px;line-height:1.8;margin-bottom:32px;max-width:480px}
+.hero-stats{display:flex;gap:32px;margin-bottom:40px;padding:24px;background:rgba(255,255,255,.05);border:1px solid rgba(196,163,90,.2);border-radius:8px}
+.stat-item{text-align:center}
+.stat-num{font-family:'Noto Serif KR',serif;font-size:32px;font-weight:700;color:var(--gold);display:block}
+.stat-label{font-size:12px;color:rgba(255,255,255,.6);letter-spacing:.08em}
+.hero-btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn-primary{background:var(--gold);color:var(--navy);padding:16px 32px;border-radius:4px;font-size:15px;font-weight:700;text-decoration:none;letter-spacing:.05em;transition:all .2s;display:inline-flex;align-items:center;gap:8px}
+.btn-primary:hover{background:var(--gold-light);transform:translateY(-2px);box-shadow:0 8px 24px rgba(196,163,90,.4)}
+.btn-secondary{background:transparent;color:var(--white);padding:16px 32px;border-radius:4px;font-size:15px;font-weight:500;text-decoration:none;letter-spacing:.05em;border:1px solid rgba(255,255,255,.4);transition:all .2s;display:inline-flex;align-items:center;gap:8px}
+.btn-secondary:hover{border-color:var(--gold);color:var(--gold)}
+.hero-visual{display:flex;flex-direction:column;gap:16px}
+.lawyer-card-hero{background:rgba(255,255,255,.06);border:1px solid rgba(196,163,90,.25);border-radius:12px;padding:24px;display:flex;gap:20px;align-items:center;transition:all .3s}
+.lawyer-card-hero:hover{background:rgba(196,163,90,.08);border-color:rgba(196,163,90,.5)}
+.lawyer-avatar{width:72px;height:72px;border-radius:50%;background:linear-gradient(135deg,var(--navy-light),#2d3561);border:2px solid var(--gold);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:28px;color:var(--gold-light)}
+.lawyer-info h4{color:var(--white);font-size:15px;font-weight:700;margin-bottom:4px}
+.lawyer-info p{color:var(--gold);font-size:12px;letter-spacing:.08em;margin-bottom:8px}
+.lawyer-info ul{list-style:none}
+.lawyer-info li{color:rgba(255,255,255,.65);font-size:12px;padding:1px 0}
+.lawyer-info li::before{content:'▪ ';color:var(--gold)}
+.hero-award{background:rgba(196,163,90,.1);border:1px solid rgba(196,163,90,.3);border-radius:8px;padding:16px 20px;display:flex;align-items:center;gap:16px}
+.hero-award i{color:var(--gold);font-size:24px}
+.hero-award p{color:rgba(255,255,255,.8);font-size:13px;line-height:1.6}
+.hero-award strong{color:var(--gold)}
+
+/* ===== SECTION COMMON ===== */
+section{padding:80px 0}
+.section-inner{max-width:1280px;margin:0 auto;padding:0 24px}
+.section-header{text-align:center;margin-bottom:56px}
+.section-badge{display:inline-block;color:var(--gold);font-size:12px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;margin-bottom:12px;padding:4px 0;border-bottom:2px solid var(--gold)}
+.section-title{font-family:'Noto Serif KR',serif;font-size:clamp(24px,3vw,38px);font-weight:700;color:var(--navy);line-height:1.3;margin-bottom:16px}
+.section-desc{color:var(--text-secondary);font-size:16px;line-height:1.8;max-width:600px;margin:0 auto}
+
+/* ===== EXPERTISE SECTION ===== */
+.expertise-section{background:var(--gray-50)}
+.expertise-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.expertise-card{background:var(--white);border-radius:12px;overflow:hidden;box-shadow:var(--shadow-sm);border:1px solid var(--gray-200);transition:all .3s;cursor:pointer}
+.expertise-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg);border-color:var(--gold)}
+.card-header-exp{background:var(--navy);padding:32px;position:relative;overflow:hidden}
+.card-header-exp::after{content:'';position:absolute;right:-20px;top:-20px;width:100px;height:100px;background:rgba(196,163,90,.1);border-radius:50%}
+.card-icon{width:60px;height:60px;background:rgba(196,163,90,.15);border:2px solid rgba(196,163,90,.4);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:24px;color:var(--gold);margin-bottom:16px}
+.card-header-exp h3{color:var(--white);font-family:'Noto Serif KR',serif;font-size:22px;font-weight:700;margin-bottom:8px}
+.card-header-exp p{color:rgba(255,255,255,.7);font-size:14px;line-height:1.7}
+.card-body-exp{padding:28px}
+.tag-list{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px}
+.tag{background:var(--gray-100);color:var(--text-secondary);padding:4px 12px;border-radius:100px;font-size:12px;font-weight:500}
+.expertise-card:hover .tag{background:rgba(196,163,90,.1);color:var(--gold-dark)}
+.result-highlight{background:linear-gradient(135deg,var(--navy),var(--navy-light));border-radius:8px;padding:16px;display:flex;align-items:center;justify-content:space-between}
+.result-highlight span{color:rgba(255,255,255,.8);font-size:13px}
+.result-highlight strong{color:var(--gold);font-size:18px;font-weight:700}
+
+/* ===== SUCCESS CASES ===== */
+.cases-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.case-card{background:var(--white);border:1px solid var(--gray-200);border-radius:10px;overflow:hidden;box-shadow:var(--shadow-sm);transition:all .3s}
+.case-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-md);border-color:var(--gold)}
+.case-tag{display:inline-block;padding:4px 10px;border-radius:4px;font-size:11px;font-weight:700;letter-spacing:.08em}
+.tag-sex{background:rgba(26,31,54,.1);color:var(--navy)}
+.tag-drug{background:rgba(139,69,19,.1);color:#5c3a1a}
+.case-card-header{padding:20px 20px 0;display:flex;justify-content:space-between;align-items:flex-start}
+.case-result{font-size:11px;color:var(--gray-600)}
+.case-card-body{padding:16px 20px 20px}
+.case-card-body h4{font-family:'Noto Serif KR',serif;font-size:16px;font-weight:700;color:var(--navy);margin-bottom:10px;line-height:1.4}
+.case-card-body p{color:var(--text-secondary);font-size:13px;line-height:1.7;margin-bottom:16px}
+.case-verdict{background:var(--gray-50);border-left:3px solid var(--gold);padding:10px 14px;border-radius:0 4px 4px 0;font-size:13px;font-weight:700;color:var(--navy)}
+.case-meta{padding:12px 20px;border-top:1px solid var(--gray-100);display:flex;justify-content:space-between;align-items:center}
+.case-lawyer{font-size:12px;color:var(--gray-600)}
+.case-date{font-size:11px;color:var(--gray-400)}
+
+/* ===== STRENGTHS ===== */
+.strengths-section{background:var(--navy)}
+.strengths-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.strength-item{text-align:center;padding:32px 20px;border:1px solid rgba(196,163,90,.15);border-radius:10px;transition:all .3s}
+.strength-item:hover{background:rgba(196,163,90,.06);border-color:rgba(196,163,90,.4)}
+.strength-icon{width:64px;height:64px;background:rgba(196,163,90,.12);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;font-size:26px;color:var(--gold)}
+.strength-item h4{color:var(--white);font-size:16px;font-weight:700;margin-bottom:12px;font-family:'Noto Serif KR',serif}
+.strength-item p{color:rgba(255,255,255,.6);font-size:13px;line-height:1.8}
+.strength-num{font-family:'Noto Serif KR',serif;font-size:40px;font-weight:700;color:var(--gold);display:block;margin-bottom:4px}
+
+/* ===== CONSULT FORM ===== */
+.consult-section{background:var(--gray-50)}
+.consult-wrap{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start}
+.consult-info h3{font-family:'Noto Serif KR',serif;font-size:28px;font-weight:700;color:var(--navy);margin-bottom:16px;line-height:1.4}
+.consult-info p{color:var(--text-secondary);font-size:15px;line-height:1.8;margin-bottom:28px}
+.contact-list{list-style:none;display:flex;flex-direction:column;gap:14px}
+.contact-item{display:flex;align-items:center;gap:14px;padding:14px;background:var(--white);border-radius:8px;box-shadow:var(--shadow-sm)}
+.contact-icon{width:40px;height:40px;background:var(--navy);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:16px;color:var(--gold);flex-shrink:0}
+.contact-item-info span{font-size:11px;color:var(--gray-600);letter-spacing:.05em}
+.contact-item-info strong{display:block;font-size:16px;font-weight:700;color:var(--navy)}
+.consult-form{background:var(--white);border-radius:12px;padding:36px;box-shadow:var(--shadow-md);border:1px solid var(--gray-200)}
+.form-title{font-family:'Noto Serif KR',serif;font-size:20px;font-weight:700;color:var(--navy);margin-bottom:24px;padding-bottom:16px;border-bottom:2px solid var(--gold)}
+.form-group{margin-bottom:16px}
+.form-label{display:block;font-size:13px;font-weight:600;color:var(--navy);margin-bottom:6px;letter-spacing:.03em}
+.form-control{width:100%;padding:12px 14px;border:1.5px solid var(--gray-200);border-radius:6px;font-size:14px;font-family:'Noto Sans KR',sans-serif;color:var(--text-primary);transition:border .2s;background:#fff;outline:none}
+.form-control:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(196,163,90,.12)}
+.form-control::placeholder{color:var(--gray-400)}
+select.form-control{cursor:pointer}
+textarea.form-control{resize:vertical;min-height:100px}
+.privacy-check{display:flex;align-items:flex-start;gap:10px;margin-bottom:20px}
+.privacy-check input{margin-top:3px;accent-color:var(--gold)}
+.privacy-check label{font-size:13px;color:var(--text-secondary);line-height:1.5}
+.privacy-check a{color:var(--gold);text-decoration:underline}
+.btn-submit{width:100%;background:var(--navy);color:var(--white);padding:15px;border-radius:6px;font-size:15px;font-weight:700;border:none;cursor:pointer;font-family:'Noto Sans KR',sans-serif;letter-spacing:.05em;transition:all .2s;display:flex;align-items:center;justify-content:center;gap:8px}
+.btn-submit:hover{background:var(--gold);color:var(--navy)}
+.form-note{text-align:center;font-size:12px;color:var(--gray-600);margin-top:12px}
+
+/* ===== FOOTER ===== */
+.site-footer{background:var(--navy-dark);border-top:1px solid rgba(196,163,90,.2)}
+.footer-top{padding:56px 0 40px;max-width:1280px;margin:0 auto;padding-left:24px;padding-right:24px;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px}
+.footer-logo{font-family:'Noto Serif KR',serif;color:var(--white);font-size:20px;font-weight:700;margin-bottom:12px}
+.footer-desc{color:rgba(255,255,255,.5);font-size:13px;line-height:1.8;margin-bottom:20px}
+.footer-info{color:rgba(255,255,255,.4);font-size:12px;line-height:2}
+.footer-col h5{color:var(--gold);font-size:13px;font-weight:700;letter-spacing:.1em;margin-bottom:16px;text-transform:uppercase}
+.footer-links{list-style:none;display:flex;flex-direction:column;gap:8px}
+.footer-links a{color:rgba(255,255,255,.55);font-size:13px;text-decoration:none;transition:color .2s}
+.footer-links a:hover{color:var(--gold)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.08);padding:20px 24px;max-width:1280px;margin:0 auto;display:flex;justify-content:space-between;align-items:center}
+.footer-copy{color:rgba(255,255,255,.35);font-size:12px}
+.footer-policy{display:flex;gap:16px}
+.footer-policy a{color:rgba(255,255,255,.35);font-size:12px;text-decoration:none}
+.footer-policy a:hover{color:var(--gold)}
+
+/* ===== PAGE 2: EXPERTISE DETAIL ===== */
+.page-hero-sub{background:linear-gradient(135deg,var(--navy-dark),var(--navy));padding:80px 0 60px}
+.page-hero-sub .breadcrumb{color:rgba(255,255,255,.5);font-size:13px;margin-bottom:16px;display:flex;align-items:center;gap:8px}
+.page-hero-sub .breadcrumb i{font-size:11px}
+.page-hero-sub .breadcrumb a{color:rgba(255,255,255,.5);text-decoration:none}
+.page-hero-sub h1{font-family:'Noto Serif KR',serif;color:var(--white);font-size:clamp(24px,3.5vw,44px);font-weight:700;margin-bottom:16px}
+.page-hero-sub p{color:rgba(255,255,255,.7);font-size:16px;max-width:600px;line-height:1.8}
+.overview-grid{display:grid;grid-template-columns:3fr 2fr;gap:40px;align-items:start}
+.overview-text h3{font-family:'Noto Serif KR',serif;font-size:22px;color:var(--navy);margin-bottom:16px}
+.overview-text p{color:var(--text-secondary);font-size:15px;line-height:1.9;margin-bottom:16px}
+.overview-alert{background:#fff3cd;border-left:4px solid #f0a500;padding:16px 20px;border-radius:0 8px 8px 0;display:flex;gap:12px;align-items:flex-start}
+.overview-alert i{color:#f0a500;margin-top:2px}
+.overview-alert p{font-size:14px;color:#5a4000;line-height:1.7;margin:0}
+.overview-card{background:var(--navy);border-radius:12px;padding:28px;color:var(--white)}
+.overview-card h4{color:var(--gold);font-size:14px;font-weight:700;letter-spacing:.1em;margin-bottom:20px;text-transform:uppercase}
+.overview-card ul{list-style:none;display:flex;flex-direction:column;gap:12px}
+.overview-card li{display:flex;align-items:center;gap:10px;font-size:14px;color:rgba(255,255,255,.8)}
+.overview-card li i{color:var(--gold);width:16px}
+.crime-types-section{background:var(--gray-50)}
+.crime-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.crime-card{background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:28px;transition:all .3s}
+.crime-card:hover{border-color:var(--gold);box-shadow:var(--shadow-md)}
+.crime-card-icon{width:48px;height:48px;background:var(--navy);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:20px;color:var(--gold);margin-bottom:16px}
+.crime-card h4{font-family:'Noto Serif KR',serif;font-size:17px;font-weight:700;color:var(--navy);margin-bottom:10px}
+.crime-card p{color:var(--text-secondary);font-size:14px;line-height:1.8;margin-bottom:14px}
+.crime-sentence{font-size:13px;font-weight:700;color:var(--gold-dark);background:rgba(196,163,90,.1);padding:6px 12px;border-radius:4px;display:inline-block}
+.timeline-section{}
+.timeline{position:relative;max-width:800px;margin:0 auto}
+.timeline::before{content:'';position:absolute;left:32px;top:0;bottom:0;width:2px;background:linear-gradient(to bottom,var(--gold),rgba(196,163,90,.1))}
+.timeline-item{display:flex;gap:32px;margin-bottom:32px;position:relative}
+.timeline-dot{width:64px;height:64px;background:var(--navy);border:3px solid var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-family:'Noto Serif KR',serif;font-size:18px;font-weight:700;color:var(--gold);z-index:1}
+.timeline-content{background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:24px;flex:1;box-shadow:var(--shadow-sm)}
+.timeline-content h4{font-family:'Noto Serif KR',serif;font-size:17px;font-weight:700;color:var(--navy);margin-bottom:8px}
+.timeline-content p{color:var(--text-secondary);font-size:14px;line-height:1.8}
+
+/* ===== PAGE 3: CASES LIST ===== */
+.filter-bar{background:var(--white);border-bottom:1px solid var(--gray-200);padding:16px 0;position:sticky;top:112px;z-index:100}
+.filter-inner{max-width:1280px;margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.filter-label{font-size:13px;font-weight:700;color:var(--navy);margin-right:4px}
+.filter-btn{padding:7px 16px;border-radius:100px;font-size:13px;font-weight:500;border:1.5px solid var(--gray-200);background:var(--white);cursor:pointer;transition:all .2s;font-family:'Noto Sans KR',sans-serif;color:var(--text-secondary)}
+.filter-btn:hover,.filter-btn.active{background:var(--navy);border-color:var(--navy);color:var(--white)}
+.search-box{margin-left:auto;display:flex;gap:8px}
+.search-input{padding:8px 14px;border:1.5px solid var(--gray-200);border-radius:6px;font-size:13px;font-family:'Noto Sans KR',sans-serif;width:200px;outline:none}
+.search-input:focus{border-color:var(--gold)}
+.cases-full-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.case-card-full{background:var(--white);border:1px solid var(--gray-200);border-radius:10px;overflow:hidden;transition:all .3s;box-shadow:var(--shadow-sm)}
+.case-card-full:hover{transform:translateY(-4px);box-shadow:var(--shadow-md);border-color:var(--gold)}
+.case-card-img{height:160px;background:linear-gradient(135deg,var(--navy),var(--navy-light));display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.case-card-img i{font-size:48px;color:rgba(196,163,90,.3)}
+.case-card-img-badge{position:absolute;top:12px;left:12px}
+.case-card-content{padding:20px}
+.case-card-content h4{font-family:'Noto Serif KR',serif;font-size:16px;font-weight:700;color:var(--navy);margin-bottom:8px;line-height:1.4}
+.case-card-content p{color:var(--text-secondary);font-size:13px;line-height:1.7;margin-bottom:14px}
+.case-verdict-highlight{display:flex;align-items:center;justify-content:space-between;background:var(--gray-50);padding:10px 14px;border-radius:6px;margin-bottom:12px}
+.verdict-label{font-size:12px;color:var(--gray-600)}
+.verdict-val{font-size:14px;font-weight:700;color:var(--navy)}
+.case-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:12px;border-top:1px solid var(--gray-100)}
+.case-lawyer-name{font-size:12px;color:var(--gray-600)}
+.case-link{font-size:13px;color:var(--gold);font-weight:700;text-decoration:none;display:flex;align-items:center;gap:4px}
+.pagination{display:flex;justify-content:center;gap:8px;margin-top:48px}
+.page-btn{width:40px;height:40px;border-radius:6px;border:1.5px solid var(--gray-200);background:var(--white);font-size:14px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s;font-family:'Noto Sans KR',sans-serif;color:var(--text-secondary)}
+.page-btn:hover,.page-btn.active{background:var(--navy);border-color:var(--navy);color:var(--white)}
+
+/* ===== PAGE 4: CASE DETAIL ===== */
+.case-detail-wrap{display:grid;grid-template-columns:3fr 1fr;gap:40px}
+.case-detail-main{}
+.case-overview-box{background:var(--navy);border-radius:12px;padding:28px;margin-bottom:28px}
+.case-overview-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.overview-item label{color:rgba(255,255,255,.5);font-size:11px;letter-spacing:.1em;text-transform:uppercase;display:block;margin-bottom:4px}
+.overview-item span{color:var(--white);font-size:14px;font-weight:600}
+.overview-item.highlight span{color:var(--gold);font-size:18px}
+.case-section-block{background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:28px;margin-bottom:20px}
+.case-section-block h3{font-family:'Noto Serif KR',serif;font-size:18px;font-weight:700;color:var(--navy);margin-bottom:16px;padding-bottom:12px;border-bottom:2px solid var(--gold);display:flex;align-items:center;gap:10px}
+.case-section-block p{color:var(--text-secondary);font-size:15px;line-height:1.9;margin-bottom:12px}
+.case-section-block ul{padding-left:0;list-style:none;display:flex;flex-direction:column;gap:8px}
+.case-section-block li{display:flex;gap:10px;font-size:14px;color:var(--text-secondary);line-height:1.7}
+.case-section-block li i{color:var(--gold);margin-top:4px;flex-shrink:0}
+.result-box{background:linear-gradient(135deg,var(--navy),var(--navy-light));border-radius:12px;padding:28px;text-align:center}
+.result-box .verdict-big{font-family:'Noto Serif KR',serif;font-size:36px;font-weight:700;color:var(--gold);display:block;margin-bottom:8px}
+.result-box p{color:rgba(255,255,255,.7);font-size:14px;line-height:1.8}
+.case-sidebar{}
+.sidebar-card{background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:20px;margin-bottom:16px;box-shadow:var(--shadow-sm)}
+.sidebar-card h5{font-size:14px;font-weight:700;color:var(--navy);margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid var(--gray-100)}
+.sidebar-lawyer-info{display:flex;gap:12px;align-items:center;margin-bottom:12px}
+.sidebar-avatar{width:52px;height:52px;border-radius:50%;background:var(--navy);border:2px solid var(--gold);display:flex;align-items:center;justify-content:center;font-size:22px;color:var(--gold-light);flex-shrink:0}
+.sidebar-lawyer-text h6{font-size:14px;font-weight:700;color:var(--navy)}
+.sidebar-lawyer-text p{font-size:12px;color:var(--gray-600)}
+.btn-consult-sidebar{width:100%;background:var(--gold);color:var(--navy);padding:12px;border-radius:6px;font-size:14px;font-weight:700;border:none;cursor:pointer;font-family:'Noto Sans KR',sans-serif;letter-spacing:.05em;transition:background .2s}
+.btn-consult-sidebar:hover{background:var(--gold-light)}
+.related-case-item{padding:12px 0;border-bottom:1px solid var(--gray-100);cursor:pointer}
+.related-case-item:last-child{border-bottom:none}
+.related-case-item h6{font-size:13px;font-weight:600;color:var(--navy);margin-bottom:4px;line-height:1.4}
+.related-case-item p{font-size:12px;color:var(--gray-600)}
+
+/* ===== PAGE 5: CONSULT FULL ===== */
+.consult-full-wrap{display:grid;grid-template-columns:2fr 1fr;gap:48px;align-items:start}
+.consult-full-form{background:var(--white);border-radius:12px;padding:40px;box-shadow:var(--shadow-md);border:1px solid var(--gray-200)}
+.consult-full-form .form-title{font-size:22px;margin-bottom:8px}
+.consult-full-form .form-subtitle{color:var(--text-secondary);font-size:14px;margin-bottom:28px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.form-steps{display:flex;gap:0;margin-bottom:32px}
+.form-step{flex:1;text-align:center;padding:12px;border-bottom:2px solid var(--gray-200);position:relative;font-size:13px;color:var(--gray-400);font-weight:500}
+.form-step.active{border-bottom-color:var(--gold);color:var(--navy);font-weight:700}
+.form-step-num{display:block;font-family:'Noto Serif KR',serif;font-size:20px;font-weight:700;margin-bottom:4px;color:var(--gray-200)}
+.form-step.active .form-step-num{color:var(--gold)}
+.consult-side{display:flex;flex-direction:column;gap:16px}
+.consult-promise-card{background:var(--navy);border-radius:12px;padding:28px;color:var(--white)}
+.consult-promise-card h4{color:var(--gold);font-size:16px;font-weight:700;margin-bottom:20px;font-family:'Noto Serif KR',serif}
+.promise-list{list-style:none;display:flex;flex-direction:column;gap:14px}
+.promise-list li{display:flex;gap:12px;font-size:14px;color:rgba(255,255,255,.8);line-height:1.6}
+.promise-list li i{color:var(--gold);margin-top:2px;flex-shrink:0}
+.consult-tel-card{background:var(--gold);border-radius:12px;padding:24px;text-align:center}
+.consult-tel-card p{color:var(--navy);font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:8px}
+.consult-tel-card a{color:var(--navy);font-family:'Noto Serif KR',serif;font-size:28px;font-weight:700;text-decoration:none;display:block;margin-bottom:8px}
+.consult-tel-card span{color:rgba(26,31,54,.7);font-size:12px}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:1024px){
+  .hero-inner{grid-template-columns:1fr;gap:40px}
+  .hero-visual{display:none}
+  .footer-top{grid-template-columns:1fr 1fr;gap:32px}
+  .strengths-grid{grid-template-columns:1fr 1fr}
+  .cases-grid,.cases-full-grid{grid-template-columns:repeat(2,1fr)}
+  .consult-wrap{grid-template-columns:1fr}
+  .case-detail-wrap{grid-template-columns:1fr}
+  .consult-full-wrap{grid-template-columns:1fr}
+}
+@media(max-width:768px){
+  .main-nav,.header-cta{display:none}
+  .hamburger{display:flex}
+  .expertise-grid,.crime-grid{grid-template-columns:1fr}
+  .cases-grid,.cases-full-grid{grid-template-columns:1fr}
+  .strengths-grid{grid-template-columns:1fr 1fr}
+  .hero-stats{flex-wrap:wrap;gap:16px}
+  .stat-item{flex:1;min-width:80px}
+  .footer-top{grid-template-columns:1fr}
+  .floating-menu{right:12px}
+  .form-row{grid-template-columns:1fr}
+  .case-overview-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<!-- FLOATING QUICK MENU -->
+<div class="floating-menu">
+  <a href="tel:02-0000-0000" class="float-btn float-btn-tel">
+    <i class="fas fa-phone"></i>
+    <span>전화</span>
+    <span class="float-label">02-0000-0000 전화상담</span>
+  </a>
+  <a href="#" class="float-btn float-btn-kakao">
+    <i class="fas fa-comment-dots"></i>
+    <span>카카오</span>
+    <span class="float-label">카카오톡 상담</span>
+  </a>
+  <a href="#" class="float-btn float-btn-consult">
+    <i class="fas fa-pencil-alt"></i>
+    <span>상담</span>
+    <span class="float-label">빠른 온라인 상담</span>
+  </a>
+</div>
+
+<!-- SHARED HEADER -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="#" class="logo">
+      <div class="logo-icon">진</div>
+      <div class="logo-text">
+        <span class="logo-name">법무법인 진명</span>
+        <span class="logo-sub">Law Firm Jinmyung</span>
+      </div>
+    </a>
+    <nav class="main-nav">
+      <a href="#" class="nav-item active" onclick="showPage('main');return false">법무법인 소개</a>
+      <a href="#" class="nav-item" onclick="showPage('expertise');return false">전문분야</a>
+      <a href="#" class="nav-item" onclick="showPage('cases-list');return false">성공사례</a>
+      <a href="#" class="nav-item" onclick="showPage('consult');return false">상담문의</a>
+    </nav>
+    <div class="header-cta">
+      <a href="tel:02-0000-0000" class="emergency-tel">
+        <i class="fas fa-phone-alt"></i> 02-0000-0000
+      </a>
+      <a href="#" class="btn-consult-header">무료 상담 신청</a>
+    </div>
+    <div class="hamburger"><span></span><span></span><span></span></div>
+  </div>
+</header>
+
+<!-- ============================================================ -->
+<!-- PAGE 1: MAIN -->
+<!-- ============================================================ -->
+<div id="page-main" class="page-content active">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div>
+        <div class="hero-badge"><i class="fas fa-award"></i> 성범죄·마약 전문 변호인단</div>
+        <h1 class="hero-title">
+          위기의 순간,<br>
+          <em>결과로 증명하는</em>
+          전문 법률팀
+        </h1>
+        <p class="hero-desc">
+          성범죄·마약 사건은 초동 대응이 결과를 결정합니다.<br>
+          법무법인 진명은 수천 건의 유사 사건 경험을 바탕으로<br>
+          의뢰인의 권리를 끝까지 지킵니다.
+        </p>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-num">1,800+</span>
+            <span class="stat-label">성공사례</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">96%</span>
+            <span class="stat-label">선처·무죄 비율</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">15년+</span>
+            <span class="stat-label">분야 경력</span>
+          </div>
+        </div>
+        <div class="hero-btns">
+          <a href="#" class="btn-primary"><i class="fas fa-comments"></i> 무료 상담 신청</a>
+          <a href="#" class="btn-secondary"><i class="fas fa-folder-open"></i> 성공사례 보기</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="lawyer-card-hero">
+          <div class="lawyer-avatar"><i class="fas fa-user-tie"></i></div>
+          <div class="lawyer-info">
+            <h4>김진수 대표변호사</h4>
+            <p>성범죄·마약 전문</p>
+            <ul>
+              <li>前 서울중앙지검 검사</li>
+              <li>사법연수원 35기</li>
+              <li>서울대학교 법학전문대학원</li>
+              <li>성범죄 분야 800건+ 수행</li>
+            </ul>
+          </div>
+        </div>
+        <div class="lawyer-card-hero">
+          <div class="lawyer-avatar"><i class="fas fa-user-tie"></i></div>
+          <div class="lawyer-info">
+            <h4>박민경 파트너변호사</h4>
+            <p>마약·형사 전문</p>
+            <ul>
+              <li>前 대검찰청 마약수사과</li>
+              <li>사법연수원 38기</li>
+              <li>연세대학교 법학전문대학원</li>
+              <li>마약 사건 600건+ 수행</li>
+            </ul>
+          </div>
+        </div>
+        <div class="hero-award">
+          <i class="fas fa-trophy"></i>
+          <p><strong>2024 대한민국 법률대상</strong> 형사 분야 최우수 로펌 수상<br>한국경제 선정 성범죄 분야 추천 법무법인 3년 연속</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERTISE -->
+  <section class="expertise-section">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-badge">Practice Areas</span>
+        <h2 class="section-title">전문 분야</h2>
+        <p class="section-desc">성범죄와 마약 사건에 특화된 전담 변호인단이 사건 초기부터 최종 판결까지 동행합니다.</p>
+      </div>
+      <div class="expertise-grid">
+        <div class="expertise-card">
+          <div class="card-header-exp">
+            <div class="card-icon"><i class="fas fa-balance-scale"></i></div>
+            <h3>성범죄 전문</h3>
+            <p>강간, 강제추행, 아청법 위반, 불법촬영 등 성범죄 전 유형에 걸쳐 풍부한 변론 경험을 보유하고 있습니다. 억울한 누명부터 정당한 선처까지, 의뢰인의 상황에 맞는 최적의 전략을 구사합니다.</p>
+          </div>
+          <div class="card-body-exp">
+            <div class="tag-list">
+              <span class="tag">강간·강제추행</span>
+              <span class="tag">아청법 위반</span>
+              <span class="tag">불법촬영(카메라등)</span>
+              <span class="tag">통신매체이용음란</span>
+              <span class="tag">공연음란</span>
+              <span class="tag">성매매</span>
+            </div>
+            <div class="result-highlight">
+              <span>수행 건수</span>
+              <strong>1,200건+</strong>
+            </div>
+          </div>
+        </div>
+        <div class="expertise-card">
+          <div class="card-header-exp">
+            <div class="card-icon"><i class="fas fa-shield-alt"></i></div>
+            <h3>마약 전문</h3>
+            <p>필로폰, 대마, 향정신성의약품 등 마약 관련 사건에 특화된 전담 팀이 수사 단계부터 밀착 대응합니다. 前 대검 마약수사 출신 변호사가 직접 전략을 수립합니다.</p>
+          </div>
+          <div class="card-body-exp">
+            <div class="tag-list">
+              <span class="tag">필로폰 투약·소지</span>
+              <span class="tag">대마 관련</span>
+              <span class="tag">향정신성의약품</span>
+              <span class="tag">마약류 밀수</span>
+              <span class="tag">공급·판매</span>
+              <span class="tag">해외 마약 사건</span>
+            </div>
+            <div class="result-highlight">
+              <span>수행 건수</span>
+              <strong>600건+</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUCCESS CASES PREVIEW -->
+  <section>
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-badge">Success Cases</span>
+        <h2 class="section-title">성공사례 하이라이트</h2>
+        <p class="section-desc">실제 판결 결과를 바탕으로 한 성공사례입니다. 유사 사건의 경험이 최선의 결과를 만듭니다.</p>
+      </div>
+      <div class="cases-grid">
+        <div class="case-card">
+          <div class="case-card-header">
+            <span class="case-tag tag-sex">성범죄</span>
+            <span class="case-result">2024.11</span>
+          </div>
+          <div class="case-card-body">
+            <h4>강제추행 혐의, 무고 입증 및 무죄 판결</h4>
+            <p>직장 내 성추행으로 고소당한 의뢰인. CCTV 분석 및 피해자 진술 모순점 발굴을 통해 무고임을 입증.</p>
+            <div class="case-verdict">결과: 무죄 선고</div>
+          </div>
+          <div class="case-meta">
+            <span class="case-lawyer"><i class="fas fa-user-tie"></i> 김진수 변호사</span>
+            <span class="case-date">서울중앙지법</span>
+          </div>
+        </div>
+        <div class="case-card">
+          <div class="case-card-header">
+            <span class="case-tag tag-drug">마약</span>
+            <span class="case-result">2024.09</span>
+          </div>
+          <div class="case-card-body">
+            <h4>필로폰 투약 초범, 집행유예 선처</h4>
+            <p>필로폰 투약으로 기소된 30대 직장인. 심리치료 이수, 가족 탄원 등 감경요인 극대화로 집행유예 획득.</p>
+            <div class="case-verdict">결과: 집행유예</div>
+          </div>
+          <div class="case-meta">
+            <span class="case-lawyer"><i class="fas fa-user-tie"></i> 박민경 변호사</span>
+            <span class="case-date">서울동부지법</span>
+          </div>
+        </div>
+        <div class="case-card">
+          <div class="case-card-header">
+            <span class="case-tag tag-sex">성범죄</span>
+            <span class="case-result">2024.07</span>
+          </div>
+          <div class="case-card-body">
+            <h4>아청법 위반(소지), 기소유예 처분</h4>
+            <p>아동청소년 성착취물 소지 혐의. 구매경위 소명 및 반성 서면 제출, 심리치료 이수로 기소유예 획득.</p>
+            <div class="case-verdict">결과: 기소유예</div>
+          </div>
+          <div class="case-meta">
+            <span class="case-lawyer"><i class="fas fa-user-tie"></i> 이정훈 변호사</span>
+            <span class="case-date">수원지검</span>
+          </div>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:36px">
+        <a href="#" class="btn-primary" style="display:inline-flex"><i class="fas fa-list"></i> 전체 성공사례 보기</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STRENGTHS -->
+  <section class="strengths-section">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-badge" style="color:var(--gold)">Why Us</span>
+        <h2 class="section-title" style="color:var(--white)">법무법인 진명을 선택해야 하는 이유</h2>
+        <p class="section-desc" style="color:rgba(255,255,255,.6)">차별화된 전문성과 시스템으로 의뢰인의 최선의 결과를 만들어냅니다.</p>
+      </div>
+      <div class="strengths-grid">
+        <div class="strength-item">
+          <div class="strength-icon"><i class="fas fa-search"></i></div>
+          <span class="strength-num">24H</span>
+          <h4>긴급 대응 시스템</h4>
+          <p>체포·구속 직후 24시간 내 변호인 접견이 사건의 방향을 바꿉니다. 연중무휴 긴급상담 대기.</p>
+        </div>
+        <div class="strength-item">
+          <div class="strength-icon"><i class="fas fa-users"></i></div>
+          <span class="strength-num">10+</span>
+          <h4>전담 변호인단</h4>
+          <p>성범죄·마약 분야만을 전담하는 10인 이상의 변호인단이 사건별 전략위원회를 구성합니다.</p>
+        </div>
+        <div class="strength-item">
+          <div class="strength-icon"><i class="fas fa-building"></i></div>
+          <span class="strength-num">前검사</span>
+          <h4>검찰 출신 전문가</h4>
+          <p>前 서울중앙지검, 대검찰청 출신 검사 경력 변호사가 수사 기관의 수사 방식을 정확히 분석합니다.</p>
+        </div>
+        <div class="strength-item">
+          <div class="strength-icon"><i class="fas fa-lock"></i></div>
+          <span class="strength-num">100%</span>
+          <h4>완전한 비밀보장</h4>
+          <p>상담 내용은 변호사법에 따라 철저히 보호됩니다. 사건 관련 일체의 정보는 외부에 유출되지 않습니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONSULT FORM -->
+  <section class="consult-section">
+    <div class="section-inner">
+      <div class="consult-wrap">
+        <div class="consult-info">
+          <span class="section-badge">Free Consultation</span>
+          <h3 style="margin-top:12px">지금 바로 무료 상담을<br>신청하세요</h3>
+          <p>성범죄·마약 사건은 초기 대응이 결과를 결정합니다. 지금 연락주시면 당일 변호사가 직접 검토하여 연락드립니다.</p>
+          <ul class="contact-list">
+            <li class="contact-item">
+              <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+              <div class="contact-item-info">
+                <span>긴급 전화상담 (24시간)</span>
+                <strong>02-0000-0000</strong>
+              </div>
+            </li>
+            <li class="contact-item">
+              <div class="contact-icon" style="background:#fee500;color:#3c1e1e"><i class="fas fa-comment-dots"></i></div>
+              <div class="contact-item-info">
+                <span>카카오톡 상담</span>
+                <strong>@법무법인진명</strong>
+              </div>
+            </li>
+            <li class="contact-item">
+              <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div class="contact-item-info">
+                <span>사무소 위치</span>
+                <strong>서울시 서초구 서초대로 123, 진명빌딩 8층</strong>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="consult-form">
+          <h3 class="form-title">무료 상담 신청</h3>
+          <div class="form-group">
+            <label class="form-label">이름 <span style="color:var(--gold)">*</span></label>
+            <input type="text" class="form-control" placeholder="성함을 입력해 주세요">
+          </div>
+          <div class="form-group">
+            <label class="form-label">연락처 <span style="color:var(--gold)">*</span></label>
+            <input type="tel" class="form-control" placeholder="010-0000-0000">
+          </div>
+          <div class="form-group">
+            <label class="form-label">사건 유형</label>
+            <select class="form-control">
+              <option value="">선택해 주세요</option>
+              <option>성범죄 (강간·강제추행)</option>
+              <option>성범죄 (아청법 위반)</option>
+              <option>성범죄 (불법촬영)</option>
+              <option>성범죄 (기타)</option>
+              <option>마약 (필로폰 투약·소지)</option>
+              <option>마약 (대마)</option>
+              <option>마약 (기타)</option>
+              <option>기타 형사 사건</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">상담 내용</label>
+            <textarea class="form-control" placeholder="사건 내용을 간략히 입력해 주세요. 모든 내용은 변호사 비밀유지 의무로 보호됩니다."></textarea>
+          </div>
+          <div class="privacy-check">
+            <input type="checkbox" id="privacy1">
+            <label for="privacy1"><a href="#">개인정보 처리방침</a>에 동의합니다. 상담 목적으로만 활용되며 제3자에게 제공되지 않습니다.</label>
+          </div>
+          <button class="btn-submit"><i class="fas fa-paper-plane"></i> 무료 상담 신청하기</button>
+          <p class="form-note">당일 또는 익일 오전 중 담당 변호사가 직접 연락드립니다</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div>
+        <div class="footer-logo">법무법인 진명</div>
+        <p class="footer-desc">성범죄·마약 사건 전문 법무법인으로서 의뢰인의 권리를 최우선으로 생각합니다. 결과로 신뢰를 증명합니다.</p>
+        <p class="footer-info">
+          대표변호사: 김진수 | 사업자등록번호: 000-00-00000<br>
+          주소: 서울시 서초구 서초대로 123, 진명빌딩 8층<br>
+          전화: 02-0000-0000 | 이메일: contact@jinmyung.kr
+        </p>
+      </div>
+      <div>
+        <h5>서비스</h5>
+        <ul class="footer-links">
+          <li><a href="#">성범죄 전문변호</a></li>
+          <li><a href="#">마약 전문변호</a></li>
+          <li><a href="#">성공사례</a></li>
+          <li><a href="#">무료 상담</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>법무법인 소개</h5>
+        <ul class="footer-links">
+          <li><a href="#">변호사 소개</a></li>
+          <li><a href="#">주요 실적</a></li>
+          <li><a href="#">언론 보도</a></li>
+          <li><a href="#">오시는 길</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>연락처</h5>
+        <ul class="footer-links">
+          <li><a href="#"><i class="fas fa-phone"></i> 02-0000-0000</a></li>
+          <li><a href="#"><i class="fas fa-comment-dots"></i> 카카오톡 상담</a></li>
+          <li><a href="#"><i class="fas fa-envelope"></i> 이메일 문의</a></li>
+          <li><a href="#"><i class="fas fa-clock"></i> 24시간 긴급상담</a></li>
+        </ul>
+      </div>
+    </div>
+    <div style="max-width:1280px;margin:0 auto;padding:0 24px">
+      <div class="footer-bottom">
+        <span class="footer-copy">© 2024 법무법인 진명. All Rights Reserved.</span>
+        <div class="footer-policy">
+          <a href="#">개인정보처리방침</a>
+          <a href="#">이용약관</a>
+          <a href="#">법적고지</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<!-- ============================================================ -->
+<!-- PAGE 2: EXPERTISE DETAIL (성범죄) -->
+<!-- ============================================================ -->
+<div id="page-expertise" class="page-content">
+  <div class="page-hero-sub">
+    <div class="section-inner">
+      <div class="breadcrumb"><a href="#">홈</a><i class="fas fa-chevron-right"></i><a href="#">전문분야</a><i class="fas fa-chevron-right"></i>성범죄 전문</div>
+      <h1>성범죄 전문 변호</h1>
+      <p>억울한 누명부터 정당한 선처까지, 성범죄 사건의 모든 단계에서 의뢰인 곁에 서 있습니다. 초기 수사 단계부터 항소심까지 전담 변호인이 동행합니다.</p>
+    </div>
+  </div>
+  <section>
+    <div class="section-inner">
+      <div class="overview-grid">
+        <div class="overview-text">
+          <h3>왜 성범죄 전문 변호사가 필요한가?</h3>
+          <p>성범죄 사건은 형사 사건 중에서도 특히 복잡한 분야입니다. 피해자 진술의 신빙성 판단, DNA·디지털 증거 분석, 심리 감정 등 일반 형사 사건과 전혀 다른 전문 지식이 요구됩니다.</p>
+          <p>또한 유죄 판결 시 형사처벌 외에도 신상정보 등록·공개, 취업 제한 등 사회적 불이익이 수반되어 사건 초기부터 전문적인 대응이 반드시 필요합니다.</p>
+          <div class="overview-alert">
+            <i class="fas fa-exclamation-triangle"></i>
+            <p>성범죄로 수사를 받고 있다면 <strong>진술 전에 반드시 변호사와 상담하세요.</strong> 첫 번째 진술이 사건 전체의 방향을 결정하는 경우가 많습니다. 지금 바로 24시간 긴급상담을 이용하세요.</p>
+          </div>
+        </div>
+        <div class="overview-card">
+          <h4>즉시 대응 가능한 상황</h4>
+          <ul>
+            <li><i class="fas fa-check-circle"></i>경찰 출석 요구를 받은 경우</li>
+            <li><i class="fas fa-check-circle"></i>체포·구속된 경우 (접견 우선)</li>
+            <li><i class="fas fa-check-circle"></i>고소장을 받은 경우</li>
+            <li><i class="fas fa-check-circle"></i>수사기관에서 연락이 온 경우</li>
+            <li><i class="fas fa-check-circle"></i>영장 신청 통보를 받은 경우</li>
+            <li><i class="fas fa-check-circle"></i>억울하게 누명을 쓴 경우</li>
+            <li><i class="fas fa-check-circle"></i>피해자로서 고소를 고려 중인 경우</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="crime-types-section">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-badge">Crime Types</span>
+        <h2 class="section-title">사건 유형별 전문 대응</h2>
+      </div>
+      <div class="crime-grid">
+        <div class="crime-card">
+          <div class="crime-card-icon"><i class="fas fa-gavel"></i></div>
+          <h4>강간·강제추행</h4>
+          <p>피해자 진술의 일관성 분석, CCTV·목격자 확보, 피해자와의 관계 및 당시 상황 재구성을 통해 사실 관계를 명확히 합니다. 합의 교섭 및 공탁 전략도 병행합니다.</p>
+          <span class="crime-sentence">형량: 3년~무기징역</span>
+        </div>
+        <div class="crime-card">
+          <div class="crime-card-icon"><i class="fas fa-child"></i></div>
+          <h4>아동청소년성보호법 위반</h4>
+          <p>아청법은 성인 성범죄보다 형량이 현저히 높습니다. 피해 아동의 나이 인식 여부, 행위 태양, 영상물 소지 경위 등을 면밀히 분석하여 최선의 방어 전략을 수립합니다.</p>
+          <span class="crime-sentence">형량: 5년~무기징역</span>
+        </div>
+        <div class="crime-card">
+          <div class="crime-card-icon"><i class="fas fa-camera"></i></div>
+          <h4>불법촬영·카메라등이용촬영</h4>
+          <p>디지털 증거 분석 전문가와의 협업으로 촬영 의도, 저장 여부, 유포 여부를 정밀 검토합니다. 초범·우발적 범행의 경우 기소유예·집행유예 전략을 적극 활용합니다.</p>
+          <span class="crime-sentence">형량: 7년 이하 징역</span>
+        </div>
+        <div class="crime-card">
+          <div class="crime-card-icon"><i class="fas fa-mobile-alt"></i></div>
+          <h4>통신매체이용음란·사이버성범죄</h4>
+          <p>SNS, 메신저, 온라인 플랫폼을 통한 성적 메시지·영상 전송 행위. IP 추적 오류, 계정 도용, 미성년자 해당 여부 등을 면밀히 검토하여 대응합니다.</p>
+          <span class="crime-sentence">형량: 2년 이하 징역</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-badge">Process</span>
+        <h2 class="section-title">사건 대응 절차</h2>
+        <p class="section-desc">사건 접수부터 최종 판결까지, 각 단계별로 최선의 전략을 실행합니다.</p>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot">1</div>
+          <div class="timeline-content">
+            <h4>긴급 상담 및 사건 분석 (D+0)</h4>
+            <p>연락 즉시 담당 변호사가 사건 개요를 파악합니다. 체포·구속 상황이라면 즉시 접견을 신청합니다. 수사 단계, 증거 현황, 피해자와의 관계를 종합적으로 분석하여 초기 전략 방향을 설정합니다.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot">2</div>
+          <div class="timeline-content">
+            <h4>수사 단계 대응 (경찰·검찰 조사)</h4>
+            <p>피의자 진술 전략 수립, 동행 출석, 진술 녹화 요청 등을 통해 수사 기관의 일방적 수사를 방지합니다. 구속영장 심사 시 의견서 제출 및 영장실질심사 변론을 진행합니다.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot">3</div>
+          <div class="timeline-content">
+            <h4>증거 수집 및 분석</h4>
+            <p>디지털 포렌식 전문가, 심리 전문가, 의료 전문가 등 분야별 전문가와 협업하여 유리한 증거를 발굴하고 불리한 증거에 대한 반박 논리를 구성합니다.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot">4</div>
+          <div class="timeline-content">
+            <h4>합의·공탁 전략 (해당 사건)</h4>
+            <p>합의가 선처에 결정적인 사건의 경우, 피해자 측과의 교섭 또는 법원 공탁 절차를 진행합니다. 합의금 규모, 타이밍, 방식 등을 전략적으로 결정합니다.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot">5</div>
+          <div class="timeline-content">
+            <h4>재판 변론 (1심·항소심)</h4>
+            <p>증거 능력 다툼, 피고인 신문 준비, 최후진술 전략까지 법정에서의 모든 변론을 담당합니다. 1심 결과에 따라 항소심 전략을 즉각 수립합니다.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="site-footer">
+    <div style="max-width:1280px;margin:0 auto;padding:20px 24px">
+      <div class="footer-bottom">
+        <span class="footer-copy">© 2024 법무법인 진명. All Rights Reserved.</span>
+        <div class="footer-policy"><a href="#">개인정보처리방침</a><a href="#">이용약관</a></div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<!-- ============================================================ -->
+<!-- PAGE 3: CASES LIST -->
+<!-- ============================================================ -->
+<div id="page-cases-list" class="page-content">
+  <div class="page-hero-sub">
+    <div class="section-inner">
+      <div class="breadcrumb"><a href="#">홈</a><i class="fas fa-chevron-right"></i>성공사례</div>
+      <h1>성공사례</h1>
+      <p>법무법인 진명의 실제 판결 결과입니다. 1,800건 이상의 성공사례가 최선의 결과를 보장합니다.</p>
+    </div>
+  </div>
+  <div class="filter-bar">
+    <div class="filter-inner">
+      <span class="filter-label">유형:</span>
+      <button class="filter-btn active">전체</button>
+      <button class="filter-btn">성범죄</button>
+      <button class="filter-btn">마약</button>
+      <button class="filter-btn">강간·강제추행</button>
+      <button class="filter-btn">아청법</button>
+      <button class="filter-btn">불법촬영</button>
+      <span class="filter-label" style="margin-left:8px">결과:</span>
+      <button class="filter-btn">무죄</button>
+      <button class="filter-btn">집행유예</button>
+      <button class="filter-btn">기소유예</button>
+      <div class="search-box">
+        <input type="text" class="search-input" placeholder="사건 검색...">
+        <button class="filter-btn" style="border-radius:6px"><i class="fas fa-search"></i></button>
+      </div>
+    </div>
+  </div>
+  <section>
+    <div class="section-inner">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:24px">
+        <p style="color:var(--text-secondary);font-size:14px">총 <strong>1,847건</strong>의 성공사례</p>
+        <select class="form-control" style="width:auto;padding:8px 14px;font-size:13px">
+          <option>최신순</option><option>결과순</option><option>유형순</option>
+        </select>
+      </div>
+      <div class="cases-full-grid">
+        <div class="case-card-full">
+          <div class="case-card-img"><i class="fas fa-balance-scale"></i><div class="case-card-img-badge"><span class="case-tag tag-sex">성범죄</span></div></div>
+          <div class="case-card-content">
+            <h4>강제추행 혐의 무고 입증 — 무죄 선고</h4>
+            <p>직장 내 성추행 고소 사건. CCTV 분석 및 피해자 진술 모순점 발굴로 무고임을 입증하여 무죄 선고 받음.</p>
+            <div class="case-verdict-highlight"><span class="verdict-label">최종 결과</span><span class="verdict-val">무죄 선고</span></div>
+            <div class="case-bottom"><span class="case-lawyer-name">김진수 변호사 | 서울중앙지법</span><a href="#" class="case-link">상세 보기 <i class="fas fa-arrow-right"></i></a></div>
+          </div>
+        </div>
+        <div class="case-card-full">
+          <div class="case-card-img"><i class="fas fa-pills"></i><div class="case-card-img-badge"><span class="case-tag tag-drug">마약</span></div></div>
+          <div class="case-card-content">
+            <h4>필로폰 투약 초범 — 집행유예 선처</h4>
+            <p>30대 직장인 필로폰 투약 사건. 자수, 심리치료 이수, 가족 탄원 등 감경요인 극대화로 집행유예 선처.</p>
+            <div class="case-verdict-highlight"><span class="verdict-label">최종 결과</span><span class="verdict-val">집행유예</span></div>
+            <div class="case-bottom"><span class="case-lawyer-name">박민경 변호사 | 서울동부지법</span><a href="#" class="case-link">상세 보기 <i class="fas fa-arrow-right"></i></a></div>
+          </div>
+        </div>
+        <div class="case-card-full">
+          <div class="case-card-img"><i class="fas fa-camera"></i><div class="case-card-img-badge"><span class="case-tag tag-sex">성범죄</span></div></div>
+          <div class="case-card-content">
+            <h4>아청법 위반(소지) — 기소유예 처분</h4>
+            <p>아동청소년 성착취물 소지 혐의. 구매경위 소명 및 반성 서면 제출로 기소유예 처분 획득.</p>
+            <div class="case-verdict-highlight"><span class="verdict-label">최종 결과</span><span class="verdict-val">기소유예</span></div>
+            <div class="case-bottom"><span class="case-lawyer-name">이정훈 변호사 | 수원지검</span><a href="#" class="case-link">상세 보기 <i class="fas fa-arrow-right"></i></a></div>
+          </div>
+        </div>
+        <div class="case-card-full">
+          <div class="case-card-img"><i class="fas fa-mobile-alt"></i><div class="case-card-img-badge"><span class="case-tag tag-sex">성범죄</span></div></div>
+          <div class="case-card-content">
+            <h4>통신매체이용음란 — 선고유예</h4>
+            <p>SNS를 통한 성적 메시지 전송 혐의. 초범, 깊은 반성, 재범 방지 서약 등을 근거로 선고유예 획득.</p>
+            <div class="case-verdict-highlight"><span class="verdict-label">최종 결과</span><span class="verdict-val">선고유예</span></div>
+            <div class="case-bottom"><span class="case-lawyer-name">김진수 변호사 | 서울북부지법</span><a href="#" class="case-link">상세 보기 <i class="fas fa-arrow-right"></i></a></div>
+          </div>
+        </div>
+        <div class="case-card-full">
+          <div class="case-card-img"><i class="fas fa-leaf"></i><div class="case-card-img-badge"><span class="case-tag tag-drug">마약</span></div></div>
+          <div class="case-card-content">
+            <h4>대마 소지·흡연 — 집행유예</h4>
+            <p>해외 체류 중 대마 흡연 후 국내 귀국 검거 사건. 외국에서의 행위, 자진 치료 등을 주장하여 집행유예 획득.</p>
+            <div class="case-verdict-highlight"><span class="verdict-label">최종 결과</span><span class="verdict-val">집행유예</span></div>
+            <div class="case-bottom"><span class="case-lawyer-name">박민경 변호사 | 인천지법</span><a href="#" class="case-link">상세 보기 <i class="fas fa-arrow-right"></i></a></div>
+          </div>
+        </div>
+        <div class="case-card-full">
+          <div class="case-card-img"><i class="fas fa-gavel"></i><div class="case-card-img-badge"><span class="case-tag tag-sex">성범죄</span></div></div>
+          <div class="case-card-content">
+            <h4>강간 혐의 — 항소심 집행유예로 감형</h4>
+            <p>1심 실형 선고 후 항소. 피해자와 합의 성립, 피고인 반성 및 사회적 유대관계 등을 근거로 집행유예로 감형 성공.</p>
+            <div class="case-verdict-highlight"><span class="verdict-label">최종 결과</span><span class="verdict-val">집행유예 (1심 감형)</span></div>
+            <div class="case-bottom"><span class="case-lawyer-name">이정훈 변호사 | 서울고등법원</span><a href="#" class="case-link">상세 보기 <i class="fas fa-arrow-right"></i></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="pagination">
+        <button class="page-btn"><i class="fas fa-chevron-left"></i></button>
+        <button class="page-btn active">1</button>
+        <button class="page-btn">2</button>
+        <button class="page-btn">3</button>
+        <button class="page-btn">4</button>
+        <button class="page-btn">5</button>
+        <button class="page-btn">...</button>
+        <button class="page-btn">92</button>
+        <button class="page-btn"><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </section>
+  <footer class="site-footer">
+    <div style="max-width:1280px;margin:0 auto;padding:20px 24px"><div class="footer-bottom"><span class="footer-copy">© 2024 법무법인 진명. All Rights Reserved.</span><div class="footer-policy"><a href="#">개인정보처리방침</a><a href="#">이용약관</a></div></div></div>
+  </footer>
+</div>
+
+<!-- ============================================================ -->
+<!-- PAGE 4: CASE DETAIL -->
+<!-- ============================================================ -->
+<div id="page-case-detail" class="page-content">
+  <div class="page-hero-sub" style="padding-bottom:40px">
+    <div class="section-inner">
+      <div class="breadcrumb"><a href="#">홈</a><i class="fas fa-chevron-right"></i><a href="#">성공사례</a><i class="fas fa-chevron-right"></i>강제추행 무죄</div>
+      <div style="display:flex;gap:12px;align-items:center;margin-bottom:16px">
+        <span class="case-tag tag-sex" style="font-size:13px;padding:6px 14px">성범죄 · 강제추행</span>
+        <span style="color:rgba(255,255,255,.5);font-size:13px">2024. 11. 15 | 서울중앙지방법원</span>
+      </div>
+      <h1 style="font-size:clamp(20px,3vw,36px)">직장 내 강제추행 고소 사건 — 무고 입증 및 무죄 선고</h1>
+    </div>
+  </div>
+  <section>
+    <div class="section-inner">
+      <div class="case-detail-wrap">
+        <div class="case-detail-main">
+          <div class="case-overview-box">
+            <div class="case-overview-grid">
+              <div class="overview-item"><label>사건 유형</label><span>강제추행 (형법 제298조)</span></div>
+              <div class="overview-item"><label>의뢰인 직업</label><span>40대 회사원</span></div>
+              <div class="overview-item"><label>수임 시점</label><span>경찰 조사 전 (피의자 신분)</span></div>
+              <div class="overview-item"><label>재판부</label><span>서울중앙지법 형사합의부</span></div>
+              <div class="overview-item"><label>담당 변호사</label><span>김진수 대표변호사</span></div>
+              <div class="overview-item highlight"><label>최종 결과</label><span>무죄 선고</span></div>
+            </div>
+          </div>
+          <div class="case-section-block">
+            <h3><i class="fas fa-file-alt" style="color:var(--gold)"></i> 사건 개요</h3>
+            <p>의뢰인은 같은 회사에 근무하는 직원으로부터 회식 자리에서 신체를 접촉하였다는 강제추행 혐의로 고소를 당했습니다. 의뢰인은 당시 해당 접촉 자체가 없었다고 주장하였으나, 피해자의 진술이 존재하는 상황에서 단순 부인만으로는 불리한 결과가 예상되었습니다.</p>
+            <p>사건 발생 후 약 2주 만에 법무법인 진명에 의뢰하였으며, 경찰 조사 이전 단계에서 방어 전략을 수립하기 시작하였습니다.</p>
+          </div>
+          <div class="case-section-block">
+            <h3><i class="fas fa-search" style="color:var(--gold)"></i> 주요 쟁점</h3>
+            <ul>
+              <li><i class="fas fa-dot-circle"></i>피해자 진술의 신빙성 — 진술의 구체성과 일관성이 유죄의 핵심 근거</li>
+              <li><i class="fas fa-dot-circle"></i>사건 당일 의뢰인의 행동 동선 및 위치 재구성</li>
+              <li><i class="fas fa-dot-circle"></i>피해자와 의뢰인 사이 고소 이전 교류 내역 (카카오톡 메시지 등)</li>
+              <li><i class="fas fa-dot-circle"></i>회식 장소 CCTV 영상 확보 가능 여부</li>
+              <li><i class="fas fa-dot-circle"></i>목격 가능한 제3자의 존재 여부</li>
+            </ul>
+          </div>
+          <div class="case-section-block">
+            <h3><i class="fas fa-chess" style="color:var(--gold)"></i> 변호 전략</h3>
+            <ul>
+              <li><i class="fas fa-check-circle"></i><strong>CCTV 영상 긴급 확보:</strong> 사건 발생 당일 회식 장소 및 이동 경로의 CCTV 영상을 경찰 압수 전에 확인하여 의뢰인의 동선이 피해자 주장과 다름을 확인</li>
+              <li><i class="fas fa-check-circle"></i><strong>피해자 SNS 분석:</strong> 고소 이전 피해자가 의뢰인에게 발송한 카카오톡 메시지에서 정상적인 관계 유지 정황 발굴</li>
+              <li><i class="fas fa-check-circle"></i><strong>목격자 진술 확보:</strong> 당시 동석한 직원 3인의 진술서를 작성하여 사건 당시 의뢰인의 행동이 피해자 진술과 상이함을 증명</li>
+              <li><i class="fas fa-check-circle"></i><strong>피해자 진술 모순 분석:</strong> 경찰 진술과 검찰 진술, 법정 증언 간의 시간적 순서, 장소 묘사 등에서 핵심 모순점을 집중 부각</li>
+            </ul>
+          </div>
+          <div class="case-section-block">
+            <div class="result-box">
+              <span class="verdict-big">무죄 선고</span>
+              <p>"피고인의 강제추행 행위를 인정할 증거가 없다"<br>— 서울중앙지방법원 2024. 11. 15. 선고<br><br>재판부는 피해자 진술의 구체성이 낮고 CCTV 영상 및 목격자 진술과 모순된다는 점을 인정하여 무죄를 선고하였습니다. 1심 무죄 후 검사 항소 없이 확정되었습니다.</p>
+            </div>
+          </div>
+        </div>
+        <div class="case-sidebar">
+          <div class="sidebar-card">
+            <h5>담당 변호사</h5>
+            <div class="sidebar-lawyer-info">
+              <div class="sidebar-avatar"><i class="fas fa-user-tie"></i></div>
+              <div class="sidebar-lawyer-text"><h6>김진수 변호사</h6><p>대표변호사 · 성범죄 전문</p></div>
+            </div>
+            <p style="font-size:13px;color:var(--text-secondary);line-height:1.7;margin-bottom:14px">前 서울중앙지검 검사 출신. 성범죄 분야 800건 이상 수행. 서울대 법학전문대학원 졸업.</p>
+            <button class="btn-consult-sidebar"><i class="fas fa-comments"></i> 이 변호사에게 상담</button>
+          </div>
+          <div class="sidebar-card">
+            <h5>유사 성공사례</h5>
+            <div class="related-case-item">
+              <h6>강간 혐의 항소심 집행유예 감형</h6>
+              <p>성범죄 · 2024.09 · 서울고등법원</p>
+            </div>
+            <div class="related-case-item">
+              <h6>성추행 무고 입증 불기소 처분</h6>
+              <p>성범죄 · 2024.08 · 수원지검</p>
+            </div>
+            <div class="related-case-item">
+              <h6>아청법 위반 기소유예 처분</h6>
+              <p>성범죄 · 2024.07 · 서울서부지검</p>
+            </div>
+          </div>
+          <div class="sidebar-card" style="background:var(--navy);border-color:transparent">
+            <h5 style="color:var(--gold)">유사 사건 상담받기</h5>
+            <p style="color:rgba(255,255,255,.7);font-size:13px;line-height:1.7;margin-bottom:14px">비슷한 상황이라면 지금 바로 무료 상담을 신청하세요. 당일 담당 변호사가 검토합니다.</p>
+            <button class="btn-consult-sidebar"><i class="fas fa-phone-alt"></i> 02-0000-0000</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="site-footer">
+    <div style="max-width:1280px;margin:0 auto;padding:20px 24px"><div class="footer-bottom"><span class="footer-copy">© 2024 법무법인 진명. All Rights Reserved.</span><div class="footer-policy"><a href="#">개인정보처리방침</a><a href="#">이용약관</a></div></div></div>
+  </footer>
+</div>
+
+<!-- ============================================================ -->
+<!-- PAGE 5: CONSULT -->
+<!-- ============================================================ -->
+<div id="page-consult" class="page-content">
+  <div class="page-hero-sub">
+    <div class="section-inner">
+      <div class="breadcrumb"><a href="#">홈</a><i class="fas fa-chevron-right"></i>온라인 상담 신청</div>
+      <h1>무료 온라인 상담 신청</h1>
+      <p>상담 내용은 변호사법에 따라 철저히 보호됩니다. 신청 후 당일 담당 변호사가 직접 검토하여 연락드립니다.</p>
+    </div>
+  </div>
+  <section style="background:var(--gray-50)">
+    <div class="section-inner">
+      <div class="consult-full-wrap">
+        <div class="consult-full-form">
+          <h2 class="form-title" style="border-bottom:2px solid var(--gold);padding-bottom:16px">온라인 상담 신청서</h2>
+          <p class="form-subtitle">모든 상담 내용은 변호사 비밀유지 의무에 따라 철저히 보호됩니다.</p>
+          <div class="form-steps">
+            <div class="form-step active"><span class="form-step-num">01</span>기본 정보</div>
+            <div class="form-step"><span class="form-step-num">02</span>사건 정보</div>
+            <div class="form-step"><span class="form-step-num">03</span>상담 완료</div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">이름 <span style="color:var(--gold)">*</span></label>
+              <input type="text" class="form-control" placeholder="성함을 입력해 주세요">
+            </div>
+            <div class="form-group">
+              <label class="form-label">연락처 <span style="color:var(--gold)">*</span></label>
+              <input type="tel" class="form-control" placeholder="010-0000-0000">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">이메일</label>
+              <input type="email" class="form-control" placeholder="이메일 주소 (선택)">
+            </div>
+            <div class="form-group">
+              <label class="form-label">선호 연락 시간</label>
+              <select class="form-control">
+                <option>언제든지 가능</option>
+                <option>오전 9시~12시</option>
+                <option>오후 12시~18시</option>
+                <option>오후 18시 이후</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">사건 유형 <span style="color:var(--gold)">*</span></label>
+            <select class="form-control">
+              <option value="">선택해 주세요</option>
+              <optgroup label="성범죄">
+                <option>강간·유사강간</option>
+                <option>강제추행</option>
+                <option>아동청소년성보호법 위반</option>
+                <option>불법촬영 (카메라등이용촬영)</option>
+                <option>통신매체이용음란</option>
+                <option>성매매</option>
+                <option>기타 성범죄</option>
+              </optgroup>
+              <optgroup label="마약">
+                <option>필로폰 투약·소지</option>
+                <option>대마 흡연·소지</option>
+                <option>향정신성의약품</option>
+                <option>마약 밀수·거래</option>
+                <option>기타 마약 사건</option>
+              </optgroup>
+              <optgroup label="기타">
+                <option>기타 형사 사건</option>
+              </optgroup>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">현재 상황 <span style="color:var(--gold)">*</span></label>
+            <select class="form-control">
+              <option value="">선택해 주세요</option>
+              <option>고소·고발 당한 상황 (피의자)</option>
+              <option>경찰 출석 요구 받음</option>
+              <option>체포·구속된 상황</option>
+              <option>재판 중 (변호인 교체)</option>
+              <option>고소를 고려 중 (피해자)</option>
+              <option>기타</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">상담 내용 <span style="color:var(--gold)">*</span></label>
+            <textarea class="form-control" style="min-height:140px" placeholder="사건 내용을 최대한 자세히 입력해 주세요. 언제, 어디서, 어떤 상황이었는지, 현재 수사 단계는 어떤지 등을 포함하면 더욱 정확한 상담이 가능합니다.&#10;&#10;모든 내용은 변호사 비밀유지 의무로 보호됩니다."></textarea>
+          </div>
+          <div class="form-group">
+            <label class="form-label">상담 경로</label>
+            <select class="form-control">
+              <option>네이버 검색</option>
+              <option>구글 검색</option>
+              <option>지인 소개</option>
+              <option>온라인 광고</option>
+              <option>블로그·카페</option>
+              <option>기타</option>
+            </select>
+          </div>
+          <div class="privacy-check">
+            <input type="checkbox" id="privacy-full">
+            <label for="privacy-full">
+              <strong>[필수]</strong> <a href="#">개인정보 수집 및 이용에 관한 동의</a>에 동의합니다. 수집된 정보는 법률 상담 목적으로만 사용되며, 동의 철회 시까지 보관 후 파기됩니다.
+            </label>
+          </div>
+          <div class="privacy-check">
+            <input type="checkbox" id="marketing">
+            <label for="marketing">[선택] 법률 정보, 판례 소식 등 유용한 정보 수신에 동의합니다.</label>
+          </div>
+          <button class="btn-submit" style="margin-top:8px"><i class="fas fa-paper-plane"></i> 상담 신청하기</button>
+          <p class="form-note" style="margin-top:16px"><i class="fas fa-shield-alt" style="color:var(--gold)"></i> 접수 후 <strong>당일 영업시간 내</strong> 담당 변호사가 직접 연락드립니다 · 주말·공휴일은 다음 영업일 처리</p>
+        </div>
+        <div class="consult-side">
+          <div class="consult-promise-card">
+            <h4>상담 시 약속드립니다</h4>
+            <ul class="promise-list">
+              <li><i class="fas fa-check-circle"></i>상담 내용은 절대 외부에 유출되지 않습니다</li>
+              <li><i class="fas fa-check-circle"></i>담당 변호사가 직접 검토하고 연락드립니다</li>
+              <li><i class="fas fa-check-circle"></i>초기 상담은 100% 무료입니다</li>
+              <li><i class="fas fa-check-circle"></i>불필요한 수임 권유를 하지 않습니다</li>
+              <li><i class="fas fa-check-circle"></i>명확한 수임료를 사전에 안내합니다</li>
+            </ul>
+          </div>
+          <div class="consult-tel-card">
+            <p>긴급 전화상담 (24시간)</p>
+            <a href="tel:02-0000-0000">02-0000-0000</a>
+            <span>체포·구속 상황은 즉시 전화 주세요</span>
+          </div>
+          <div class="sidebar-card">
+            <h5>오시는 길</h5>
+            <div style="background:var(--gray-100);border-radius:6px;height:140px;display:flex;align-items:center;justify-content:center;margin-bottom:14px;color:var(--gray-400);font-size:13px"><i class="fas fa-map-marked-alt" style="margin-right:6px"></i> 지도 영역</div>
+            <p style="font-size:13px;color:var(--text-secondary);line-height:1.8">
+              <strong>서울 사무소</strong><br>
+              서울시 서초구 서초대로 123<br>
+              진명빌딩 8층<br>
+              <br>
+              <strong>교통편</strong><br>
+              지하철 2호선 강남역 3번 출구 도보 5분<br>
+              지하철 3호선 교대역 9번 출구 도보 7분
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="site-footer">
+    <div style="max-width:1280px;margin:0 auto;padding:20px 24px"><div class="footer-bottom"><span class="footer-copy">© 2024 법무법인 진명. All Rights Reserved.</span><div class="footer-policy"><a href="#">개인정보처리방침</a><a href="#">이용약관</a></div></div></div>
+  </footer>
+</div>
+
+<script>
+function showPage(id) {
+  document.querySelectorAll('.page-content').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.main-nav .nav-item').forEach(n => n.classList.remove('active'));
+  document.getElementById('page-' + id).classList.add('active');
+  if(event && event.target.classList.contains('nav-item')) event.target.classList.add('active');
+  window.scrollTo(0, 0);
+}
+// Filter buttons
+document.querySelectorAll('.filter-btn').forEach(btn => {
+  btn.addEventListener('click', function() {
+    const group = this.closest('.filter-inner');
+    // Only toggle within same label group (simple demo)
+    this.classList.toggle('active');
+  });
+});
+// Page buttons
+document.querySelectorAll('.page-btn').forEach(btn => {
+  btn.addEventListener('click', function() {
+    if (!this.querySelector('i')) {
+      document.querySelectorAll('.page-btn').forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+    }
+  });
+});
+</script>
+</body>
+</html>
